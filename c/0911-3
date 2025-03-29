@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    int x, y, z, *px, *py, *pz, *tmp;
+    px = &x, py = &y, pz = &z;
+    scanf("%d %d %d", px, py, pz);
+    tmp = &x;
+    px = &z, py = tmp, pz = &y;
+    printf("%d %d %d", px, py, pz);
+}
