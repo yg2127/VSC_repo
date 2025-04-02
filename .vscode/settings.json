@@ -1,53 +1,22 @@
 {
-    "editor.fontFamily": "Fira Code","",
-    "editor.fontLigatures": true,
-    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
-    "editor.fontSize": 17,
-    "peacock.favoriteColors": [
-        {
-            "name": "Coral",
-            "value": "#d991a3"
-        },
-        {
-            "name": "Skyblue",
-            "value": "#91a9d9"
-        },
-        {
-            "name": "Gold",
-            "value": "#d6c77a"
-        },
-        {
-            "name": "Crimson",
-            "value": "#ba5252"
-        },
-        {
-            "name": "Dark navy",
-            "value": "#2e3c57"
-        },
-        {
-            "name": "Olive",
-            "value": "#799161"
-        },
-    ],
     "workbench.colorCustomizations": {
-        "activityBar.activeBackground": "#e6b7c3",
-        "activityBar.background": "#e6b7c3",
+        "activityBar.activeBackground": "#f6d6d8",
+        "activityBar.background": "#f6d6d8",
         "activityBar.foreground": "#15202b",
         "activityBar.inactiveForeground": "#15202b99",
-        "activityBarBadge.background": "#498e31",
+        "activityBarBadge.background": "#2a9d22",
         "activityBarBadge.foreground": "#e7e7e7",
         "commandCenter.border": "#15202b99",
-        "sash.hoverBorder": "#e6b7c3",
-        "statusBar.background": "#d991a3",
+        "sash.hoverBorder": "#f6d6d8",
+        "statusBar.background": "#edacb1",
         "statusBar.foreground": "#15202b",
-        "statusBarItem.hoverBackground": "#cc6b83",
-        "statusBarItem.remoteBackground": "#d991a3",
+        "statusBarItem.hoverBackground": "#e4828a",
+        "statusBarItem.remoteBackground": "#edacb1",
         "statusBarItem.remoteForeground": "#15202b",
-        "titleBar.activeBackground": "#d991a3",
+        "titleBar.activeBackground": "#edacb1",
         "titleBar.activeForeground": "#15202b",
-        "titleBar.inactiveBackground": "#d991a399",
+        "titleBar.inactiveBackground": "#edacb199",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#d991a3"
-
+    "peacock.color": "#edacb1"
 }
