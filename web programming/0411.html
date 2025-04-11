@@ -8,6 +8,13 @@
     <h2>Sign Up</h2>
     <form action="/signup" method="post">
     <div>
+        <label for="age_number">Age (Number Input):</label><br>
+        <input type="number" id="age_number" name="age_number" min="0" max="120"><br><br>
+
+        <label for="age_range">Age (Slider Input):</label><br>
+        <input type="range" id="age_range" name="age_range" min="0" max="120" step="1">
+    </div>
+    <div>
         <label for="username">Name:</label><br>
         <input type="text" id="username" name="username" required>
     </div>
@@ -86,5 +93,19 @@
 
     <button type="submit">Register</button>
     </form>
+    <script>
+        const ageNumber = document.getElementById('age_number');
+        const ageRange = document.getElementById('age_range');
+
+        // number input → range slider
+        ageNumber.addEventListener('input', () => {
+            ageRange.value = ageNumber.value;
+        });
+
+        // range slider → number input
+        ageRange.addEventListener('input', () => {
+            ageNumber.value = ageRange.value;
+        });
+    </script>
 </body>
 </html>
