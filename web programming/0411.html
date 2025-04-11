@@ -2,32 +2,89 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>회원가입</title>
+    <title>Sign Up</title>
 </head>
 <body>
-    <h2>회원가입</h2>
+    <h2>Sign Up</h2>
     <form action="/signup" method="post">
     <div>
-        <label for="username">이름:</label><br>
+        <label for="username">Name:</label><br>
         <input type="text" id="username" name="username" required>
     </div>
 
     <div>
-        <label for="email">이메일:</label><br>
+        <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required>
     </div>
 
     <div>
-        <label for="password">비밀번호:</label><br>
+        <label for="password">Password:</label><br>
         <input type="password" id="password" name="password" required>
     </div>
 
     <div>
-        <label for="confirm">비밀번호 확인:</label><br>
+        <label for="confirm">Confirm Password:</label><br>
         <input type="password" id="confirm" name="confirm" required>
     </div>
 
-    <button type="submit">가입하기</button>
+    <div>
+        <label for="search">Search:</label><br>
+        <input type="search" id="search" name="search">
+    </div>
+
+    <div>
+        <label for="tel">Phone Number:</label><br>
+        <input type="tel" id="tel" name="tel">
+    </div>
+
+    <div>
+        <label for="url">Website URL:</label><br>
+        <input type="url" id="url" name="url">
+    </div>
+
+    <div>
+        <label for="browser">Preferred Browser:</label><br>
+        <input type="text" id="browser" name="browser" list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Safari">
+        </datalist>
+    </div>
+
+    <div>
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+    </div>
+
+    <div>
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label>
+    </div>
+
+    <div>
+        <label for="nationality">Nationality:</label><br>
+        <select id="nationality" name="nationality">
+            <option value="korea">Korea</option>
+            <option value="usa">USA</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+
+    <button type="submit">Register</button>
     </form>
 </body>
 </html>
