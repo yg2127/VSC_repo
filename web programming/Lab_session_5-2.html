@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML Image Challenge</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    figure {
+        text-align: center;
+        margin: 20px 0;
+    }
+    figcaption {
+        font-style: italic;
+        margin-top: 8px;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Image Challenge</h1>
+
+    <h2>1. Image Tag Basics</h2>
+    <p>This image demonstrates use of <code>&lt;img&gt;</code> tag with <code>src</code>, <code>alt</code>, and <code>title</code> attributes.</p>
+    <img src="https://via.placeholder.com/400x200" alt="Placeholder image" title="This is a placeholder image" />
+
+    <h2>2. Responsive Image</h2>
+    <p>Using <code>srcset</code> and <code>sizes</code> to provide responsive image support.</p>
+    <img 
+    src="https://via.placeholder.com/800x400"
+    srcset="
+        https://via.placeholder.com/400x200 400w,
+        https://via.placeholder.com/600x300 600w,
+        https://via.placeholder.com/800x400 800w
+    "
+    sizes="(max-width: 600px) 100vw, 800px"
+    alt="Responsive placeholder"
+    title="Responsive image demo"
+    />
+
+    <h2>3. Captioned Image</h2>
+    <p>Grouping image and caption using <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>.</p>
+    <figure>
+    <img src="https://via.placeholder.com/500x250" alt="Captioned image" title="Image with caption" />
+    <figcaption>This is an example of a captioned image.</figcaption>
+    </figure>
+
+</body>
+</html>
