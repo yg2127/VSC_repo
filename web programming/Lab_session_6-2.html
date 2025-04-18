@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Multimedia Elements Challenge 02</title>
+    <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <h1>HTML5 Multimedia Elements Challenge 02</h1>
+
+    <!-- Audio Integration -->
+    <h2>Audio Section</h2>
+    <audio id="myAudio" controls>
+    <source src="sample.mp3" type="audio/mpeg">
+    <source src="sample.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
+    <p>⏱ Current Time: <span id="currentTime">0</span> / <span id="duration">0</span> seconds</p>
+
+    <!-- JavaScript for audio playback time -->
+    <script>
+    const audio = document.getElementById("myAudio");
+    const currentTimeSpan = document.getElementById("currentTime");
+    const durationSpan = document.getElementById("duration");
+
+    audio.addEventListener("loadedmetadata", () => {
+        durationSpan.textContent = Math.floor(audio.duration);
+    });
+
+    audio.addEventListener("timeupdate", () => {
+        currentTimeSpan.textContent = Math.floor(audio.currentTime);
+    });
+    </script>
+
+    <!-- Video Integration -->
+    <h2>Video Section</h2>
+    <video width="640" height="360" controls autoplay muted poster="poster.jpg">
+    <source src="sample.mp4" type="video/mp4">
+    <source src="sample.webm" type="video/webm">
+    Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>

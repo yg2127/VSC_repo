@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration Form</title>
+</head>
+<body>
+
+  <h1>User Registration Form</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Basic Information</legend>
+
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="At least 8 characters" required minlength="8"><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+
+      <label for="country">Country:</label><br>
+      <select id="country" name="country" required>
+        <option value="">--Select your country--</option>
+        <option value="kr">South Korea</option>
+        <option value="us">United States</option>
+        <option value="jp">Japan</option>
+        <option value="uk">United Kingdom</option>
+        <option value="etc">Other</option>
+      </select><br><br>
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the terms and conditions</label><br><br>
+
+      <input type="submit" value="Register">
+    </fieldset>
+  </form>
+
+</body>
+</html>
