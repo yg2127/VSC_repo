@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'christopregular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/christopregular.eot');
+    src: url('fonts/christopregular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/christopregular.woff2') format('woff2'),
+        url('fonts/christopregular.woff') format('woff'),
+        url('fonts/christopregular.ttf') format('truetype'),
+        url('fonts/christopregular.svg#christopregular') format('svg');
+    src: url();
+}

@@ -1,0 +1,24 @@
+.navbar {
+    list-style: none;
+    background-color: #333;
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+    padding: 15px;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: #444;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
